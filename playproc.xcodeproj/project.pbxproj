@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9E11E747160524AE00EC55A2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E11E746160524AE00EC55A2 /* main.cpp */; };
 		9E11E749160524AE00EC55A2 /* playproc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9E11E748160524AE00EC55A2 /* playproc.1 */; };
+		9E11E75116052D6C00EC55A2 /* SimpleAudioPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E11E74F16052D6C00EC55A2 /* SimpleAudioPlayer.cpp */; };
+		9E1E669816055A3D00ACED1A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1E669616055A3D00ACED1A /* CoreAudio.framework */; };
+		9E1E669916055A3D00ACED1A /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1E669716055A3D00ACED1A /* CoreAudioKit.framework */; };
+		9E1E669B16055A7A00ACED1A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1E669A16055A7A00ACED1A /* AudioToolbox.framework */; };
+		9E1E669D16055ADC00ACED1A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1E669C16055ADC00ACED1A /* CoreFoundation.framework */; };
+		9E1E66A41607F32500ACED1A /* BlockProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E66A21607F32500ACED1A /* BlockProcessor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +34,14 @@
 		9E11E742160524AE00EC55A2 /* playproc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = playproc; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E11E746160524AE00EC55A2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9E11E748160524AE00EC55A2 /* playproc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = playproc.1; sourceTree = "<group>"; };
+		9E11E74F16052D6C00EC55A2 /* SimpleAudioPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleAudioPlayer.cpp; sourceTree = "<group>"; };
+		9E11E75016052D6C00EC55A2 /* SimpleAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioPlayer.h; sourceTree = "<group>"; };
+		9E1E669616055A3D00ACED1A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9E1E669716055A3D00ACED1A /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		9E1E669A16055A7A00ACED1A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9E1E669C16055ADC00ACED1A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9E1E66A21607F32500ACED1A /* BlockProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockProcessor.cpp; sourceTree = "<group>"; };
+		9E1E66A31607F32500ACED1A /* BlockProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockProcessor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1E669D16055ADC00ACED1A /* CoreFoundation.framework in Frameworks */,
+				9E1E669B16055A7A00ACED1A /* AudioToolbox.framework in Frameworks */,
+				9E1E669816055A3D00ACED1A /* CoreAudio.framework in Frameworks */,
+				9E1E669916055A3D00ACED1A /* CoreAudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				9E11E745160524AE00EC55A2 /* playproc */,
+				9E1E669C16055ADC00ACED1A /* CoreFoundation.framework */,
+				9E1E669A16055A7A00ACED1A /* AudioToolbox.framework */,
+				9E1E669616055A3D00ACED1A /* CoreAudio.framework */,
+				9E1E669716055A3D00ACED1A /* CoreAudioKit.framework */,
 				9E11E743160524AE00EC55A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				9E11E746160524AE00EC55A2 /* main.cpp */,
+				9E11E74F16052D6C00EC55A2 /* SimpleAudioPlayer.cpp */,
+				9E11E75016052D6C00EC55A2 /* SimpleAudioPlayer.h */,
 				9E11E748160524AE00EC55A2 /* playproc.1 */,
+				9E1E66A21607F32500ACED1A /* BlockProcessor.cpp */,
+				9E1E66A31607F32500ACED1A /* BlockProcessor.h */,
 			);
 			path = playproc;
 			sourceTree = "<group>";
@@ -118,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E11E747160524AE00EC55A2 /* main.cpp in Sources */,
+				9E11E75116052D6C00EC55A2 /* SimpleAudioPlayer.cpp in Sources */,
+				9E1E66A41607F32500ACED1A /* BlockProcessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +204,7 @@
 		9E11E74D160524AE00EC55A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -183,6 +212,7 @@
 		9E11E74E160524AE00EC55A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -206,6 +236,7 @@
 				9E11E74E160524AE00EC55A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

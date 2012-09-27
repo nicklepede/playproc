@@ -7,12 +7,24 @@
 //
 
 #include <iostream>
+#include "SimpleAudioPlayer.h"
+
+#define kTestWavefilepath CFSTR("/Users/thf876/dev/dsper/playproc/playproc/test.wav")
 
 int main(int argc, const char * argv[])
 {
 
+    OSStatus ret;
     // insert code here...
-    std::cout << "Hello, World!\n";
+    SimpleAudioPlayer buff;
+    ret = buff.Play(kTestWavefilepath);
+    if (!ret) {
+        std::cout << "Loaded test file...";
+    }
+    else {
+        std::cout << "Error Loading file" << ret;
+    }
+    
     return 0;
 }
 
